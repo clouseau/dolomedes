@@ -20,7 +20,7 @@ LABEL io.k8s.description="Platform for building and running PHP 7.0 applications
 # Install Apache httpd and PHP
 RUN yum install -y centos-release-scl && \
     yum-config-manager --enable centos-sclo-rh-testing && \
-    INSTALL_PKGS="rh-php70 rh-php70-php rh-php70-php-mysqlnd rh-php70-php-pgsql rh-php70-php-bcmath \
+    INSTALL_PKGS="httpd24 rh-php70 rh-php70-php rh-php70-php-mysqlnd rh-php70-php-pgsql rh-php70-php-bcmath \
                   rh-php70-php-gd rh-php70-php-intl rh-php70-php-ldap rh-php70-php-mbstring rh-php70-php-pdo \
                   rh-php70-php-process rh-php70-php-soap rh-php70-php-opcache rh-php70-php-xml \
                   rh-php70-php-gmp" && \
